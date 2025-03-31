@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #040714;
+  color: #f9f9f9;
+
+  font-family: Avenir-Roman, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  body {
+      font-size: 14px;
+  }
+}
+/* Add this to your global CSS file */
+.slick-slider > button {
+  opacity: 0;
+  height: 100%;
+  width: 5vw;
+  z-index: 1;
+}
+
+.slick-slider > button:hover {
+  opacity: 1;
+  transition: opacity 0.2s ease 0s;
+}
+
+.slick-slider ul li button:before {
+  font-size: 10px;
+  color: rgb(150, 158, 171);
+}
+
+.slick-slider li.slick-active button:before {
+  color: white;
+}
+
+.slick-slider .slick-list {
+  overflow: initial;
+}
+
+.slick-slider .slick-prev {
+  left: -75px;
+}
+
+.slick-slider .slick-next {
+  right: -75px;
+}
